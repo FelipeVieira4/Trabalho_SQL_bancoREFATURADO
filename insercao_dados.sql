@@ -1,10 +1,10 @@
 /*
 	Crime: 1
     
-    José Albes - Dono de joalheria e há boatos que ele era lider de uma ceita
+    José Albes - Dono de joalheria e há boatos que ele era lider da ceita iluminati
 	Natanael L.  - Lenhador estava com muitas dividas
     Renato Ramos - Porte de arma
-	Matheus Rodrigues - Jaqueta Preta ex-funcionario da joalheria do José Albes
+	Matheus Rodrigues - Jaqueta Preta ex-funcionario da joalheria do José Albes ja teve passagem pela policia por roubo
     Kevin Motter - Fazia parte da ceita do José Albes
     
 */
@@ -59,7 +59,7 @@ insert into evidencia(item,id_crime) values("Machado",2);
 
 /*
 
-	Crime -3
+	Crime - 3
 
 */
 

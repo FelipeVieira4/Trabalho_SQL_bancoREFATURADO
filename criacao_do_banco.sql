@@ -28,6 +28,7 @@ create table suspeito(
 	id int primary key auto_increment,
     nome varchar(255) not null,
     telefone varchar(11),
+    fixaCriminal varchar(255),
     idade int not  null
 );
 
