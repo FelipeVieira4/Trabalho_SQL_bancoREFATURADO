@@ -1,3 +1,5 @@
+#GIT TEST
+
 select tipoCrime,count(id) as "Quantidades" from crime group by tipoCrime;
 
 select bairro,count(crime.id) from localizacao inner join crime on crime.id_local = localizacao.id group by bairro
