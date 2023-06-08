@@ -1,4 +1,3 @@
-#GIT TEST
 
 select tipoCrime,count(id) as "Quantidades" from crime group by tipoCrime;
 
