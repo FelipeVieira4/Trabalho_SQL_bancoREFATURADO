@@ -1,5 +1,5 @@
-#create database crimes;
-#use crimes;
+create database crimes;
+use crimes;
 
 # Criação da tablea "localização"
 create table localizacao(
@@ -20,7 +20,7 @@ create table crime(
 create table vitima(
 	id int primary key auto_increment,
     nome varchar(255) not null,
-    id_crime int,foreign key(id_crime) references crime(id) 
+    id_crime int,foreign key(id_crime) references crime(id)
 );
 
 #Criação da tebela "suspeito"
