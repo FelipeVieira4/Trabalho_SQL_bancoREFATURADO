@@ -30,6 +30,12 @@ insert into  crime_suspeito(id_crime,id_suspeito) values
 (1,4); #Kevin Motter
 
 
+insert into descricao(id_crime,motivo,id_suspeito) values
+(1,"Filho mais velho do João Alves.",1),
+(1,"Teve problemas juridicos com João Alves",2),
+(1,"Segurança de João Alves e da Joalheria",3),
+(1,"Lider de uma ceitar triangular",4);
+
 insert into evidencia(item,id_crime) values("Pistola 9MM",1);
 
 

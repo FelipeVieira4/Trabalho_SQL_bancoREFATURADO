@@ -33,7 +33,7 @@ create table suspeito(
 );
 
 
-create table motivos(
+create table descricao(
 	id int primary key auto_increment,
 	motivo varchar(255) not null,
     id_crime int, foreign key(id_crime) references crime(id),
