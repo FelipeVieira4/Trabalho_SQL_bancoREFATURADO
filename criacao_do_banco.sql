@@ -1,5 +1,5 @@
-create database crimes;
-use crimes;
+#create database crimes;
+#use crimes;
 
 # Criação da tablea "localização"
 create table localizacao(
@@ -32,6 +32,14 @@ create table suspeito(
     idade int not  null
 );
 
+
+create table motivos(
+	id int primary key auto_increment,
+	motivo varchar(255) not null,
+    id_crime int, foreign key(id_crime) references crime(id),
+    id_suspeito int, foreign key(id_suspeito) references suspeito(id)
+);
+
 #Criação da relação crime e suspeito
 create table crime_suspeito(
 	id int primary key auto_increment,
@@ -39,22 +47,9 @@ create table crime_suspeito(
     id_suspeito int not null,foreign key(id_suspeito) references suspeito(id)
 );
 
-create table motivacao(
-	id int primary key auto_increment,
-    id_suspeito int not null,foreign key(id_suspeito) references suspeito(id),
-    motivaca varchar(255)
-);
-
 #Criação da tabela "evidencia"
 create table evidencia(
 	id int primary key auto_increment,
     item varchar(255) not null,
     id_crime int not null,foreign key(id_crime) references crime(id)
-);
-
-create table cumplice(
-	id int primary key auto_increment,
-	nome varchar(50),
-	idade int,
-	id_crime int,foreign key(id_crime) references crime(id)
 );
