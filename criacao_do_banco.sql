@@ -4,7 +4,6 @@
 # Criação da tablea "localização"
 create table localizacao(
 	id int primary key auto_increment,
-    local varchar(255),
     rua varchar(255) not null,
     bairro varchar(255) not null
 );
