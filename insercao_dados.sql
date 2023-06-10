@@ -10,34 +10,26 @@
 */
 
 insert into localizacao(rua,bairro) values("R. João Carlos Stein"," Jaraguá Esquerdo");
-
 insert into crime (data,id_local) values("2023-03-15",1);
 
+insert into vitima (nome,id_crime) values("José Alves",1);
+
+#inserção dos suspeitos do crime(1)
 insert into suspeito (nome,telefone,idade) values
 ("Natanael A.","47666666666",76),
 ("Renato Ramos","47963577418",45),
 ("Matheus Rodrigues","47896654123",39),
 ("Kevin Motter","47896654123",39);
 
-insert into vitima (nome,id_crime)values
-("José Alves",1);
 
-
-insert into  crime_suspeito(id_crime,id_suspeito) values
-(1,1), #Natanael A.
-(1,2), #Renato Ramos
-(1,3), #Matheus Rodrigues
-(1,4); #Kevin Motter
-
-
-insert into descricao(id_crime,motivo,id_suspeito) values
-(1,"Filho mais velho do João Alves.",1),
-(1,"Teve problemas juridicos com João Alves",2),
-(1,"Segurança de João Alves e da Joalheria",3),
-(1,"Lider de uma ceitar triangular",4);
+#Relação entre crime(1) e os suspeitos
+insert into  crime_suspeito(id_crime, id_suspeito, motivo) values
+(1,1,"Filho mais velho do João Alves."), #Natanael A.
+(1,2,"Teve problemas juridicos com João Alves"), #Renato Ramos
+(1,3,"Segurança de João Alves e da Joalheria"), #Matheus Rodrigues
+(1,4,"Lider de uma ceitar triangular"); #Kevin Motter
 
 insert into evidencia(item,id_crime) values("Pistola 9MM",1);
-
 
 /*
 	Crime: 2
@@ -49,11 +41,12 @@ insert into evidencia(item,id_crime) values("Pistola 9MM",1);
 insert into localizacao(rua,bairro) values("R. João Planincheck","Nova Brasília");
 insert into crime (data,id_local)values ("2023-03-30",2);
 
-
 insert into vitima (nome,id_crime)values ("Matheus Rodrigues",2);
 
 
-insert into  crime_suspeito(id_crime,id_suspeito) values (2,1);#Natanel A.
+insert into  crime_suspeito(id_crime, id_suspeito, motivo) values (2,1,"Provavel vingança familiar");#Natanel A.
+insert into descricao(id_crime,motivo,id_suspeito) values (2,,1);
+
 insert into evidencia(item,id_crime) values("Machado",2);
 
 /*
@@ -63,15 +56,14 @@ insert into evidencia(item,id_crime) values("Machado",2);
 
 */
 
-insert into suspeito (nome,telefone,idade) values("Arthur R.","666",26);
 
 insert into localizacao(rua,bairro) values("R. Artur Gumz, 709"," Vila Nova");
 insert into crime (data,id_local) values("2023-4-15",3);
 
-
 insert into vitima (nome,id_crime) values("Natanael A.",3);
 
 
+insert into suspeito (nome,telefone,idade) values("Arthur R.","666",26);
 insert into  crime_suspeito(id_crime,id_suspeito) values
 (3,2),
 (3,4),
