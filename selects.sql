@@ -14,3 +14,11 @@ inner join localizacao on localizacao.id = crime.id_local;
 
 #Mostrar quantidades de suspeitos por crimes
 select crime_suspeito.id_crime as "CRIME",count(crime_suspeito.id_suspeito) as "Suspeitos" from crime_suspeito group by id_crime;
+
+/*
+
+
+*/
+
+#Mostrar idades
+select avg(suspeito.idade) as "Média", min(suspeito.idade) as "Menor", max(suspeito.idade) as "Maior" from suspeito;
