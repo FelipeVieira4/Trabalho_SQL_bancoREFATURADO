@@ -40,7 +40,7 @@ insert into evidencia(item,id_crime) values("carta de Denuncia",2);
 	Crime - 3
 */
 
-insert into localizacao(rua,bairro) values("R. Artur Gumz, 709"," Vila Nova");
+insert into localizacao(rua,bairro) values("R. Guilherme C Wackerhagen", "Vila Nova");
 insert into crime (data,descricao,id_local) values("2023-4-15","morto ao sair de uma casa de boliche",3);
 
 insert into vitima (nome,id_crime) values("Natanael A.",3);
