@@ -10,7 +10,8 @@ create table crime(
 	id int primary key auto_increment,
   data date not null,
   descricao varchar(255),
-	id_local int not null,foreign key(id_local) references localizacao(id)
+	id_local int not null,foreign key(id_local) references localizacao(id),
+    horario int
 );
 
 #Criação da tebela "vitima"

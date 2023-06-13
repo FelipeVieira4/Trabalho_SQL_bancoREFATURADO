@@ -3,7 +3,7 @@
 */
 
 insert into localizacao(rua,bairro) values("R. João Carlos Stein"," Jaraguá Esquerdo");
-insert into crime (data,descricao,id_local) values("2023-03-15","A vitima foi morta enquanto saia da joalheria depois de fechar a mesma, o suspeito usou arma de fogo para cometer o assasinato.",1);
+insert into crime (data,descricao,id_local,horario) values("2023-03-15","A vitima foi morta enquanto saia da joalheria depois de fechar a mesma, o suspeito usou arma de fogo para cometer o assasinato.",1,2030);
 
 insert into vitima (nome,id_crime) values("José Alves",1);
 
@@ -27,7 +27,7 @@ insert into evidencia(item,id_crime) values("Cápisulas de uma arma de fogo.",1)
 */
 
 insert into localizacao(rua,bairro) values("R. João Planincheck","Nova Brasília");
-insert into crime (data,descricao,id_local)values ("2023-03-30","A vitima foi atropelado, carro e placa não identificados.",2);
+insert into crime (data,descricao,id_local,horario)values ("2023-03-30","A vitima foi atropelado, carro e placa não identificados.",2,0200);
 
 insert into vitima (nome,id_crime)values ("Matheus Rodrigues",2);
 
@@ -41,7 +41,7 @@ insert into evidencia(item,id_crime) values("carta de Denuncia",2);
 */
 
 insert into localizacao(rua,bairro) values("R. Guilherme C Wackerhagen", "Vila Nova");
-insert into crime (data,descricao,id_local) values("2023-4-15","Morto ao sair de uma casa de boliche.",3);
+insert into crime (data,descricao,id_local,horario) values("2023-4-15","Morto ao sair de uma casa de boliche.",3,0450);
 
 insert into vitima (nome,id_crime) values("Natanael A.",3);
 
