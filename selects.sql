@@ -4,7 +4,7 @@ inner join suspeito on suspeito.id =crime_suspeito.id_suspeito
 group by crime_suspeito.id_suspeito order by suspeito.idade;
 
 #ID do Crime|Suspeito|Idade|Motivo
-crime_suspeito.id_crime as "CRIME", suspeito.nome, suspeito.idade, crime_suspeito.motivo from crime_suspeito
+select crime_suspeito.id_crime as "CRIME", suspeito.nome, suspeito.idade, crime_suspeito.motivo from crime_suspeito
 inner join suspeito on suspeito.id =crime_suspeito.id_suspeito;
 
 #ID|Nome Vitima|Localização|Descrição
