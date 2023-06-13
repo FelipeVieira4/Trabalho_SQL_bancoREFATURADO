@@ -1,5 +1,5 @@
-#create database crimes;
-#use crimes;
+create database crimes;
+use crimes;
 
 # Criação da tablea "localização"
 create table localizacao(
