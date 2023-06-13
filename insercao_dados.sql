@@ -37,7 +37,7 @@ insert into  crime_suspeito(id_crime, id_suspeito, motivo) values (2,1,"vinganç
 insert into evidencia(item,id_crime) values("carta de Denuncia",2);
 
 /*
-	Crime - 3
+	Crime: 3
 */
 
 insert into localizacao(rua,bairro) values("R. Guilherme C Wackerhagen", "Vila Nova");
